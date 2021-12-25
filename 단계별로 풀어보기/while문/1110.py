@@ -5,8 +5,7 @@ if (0 <= n <= 99):
     count = 0
     value = n
     arr = []
-    arr.append(value)
-    while arr.count(value) < 2:
+    while not value in arr:
         arr.append(value)
         first = value // 10
         second = value % 10
